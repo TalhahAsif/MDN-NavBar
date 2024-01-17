@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Oxygen", sans-serif;
+  background-color: black;
+  color: gainsboro;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.logo {
+  font-size: 30px;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+}
+.firstcontainer {
+  display: flex;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.theme,
+.login {
+  border: none;
+  background: none;
+  /* margin: 0 10px; */
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.signup {
+  padding: 5px 23px;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.signup:hover {
+  background-color: rgb(202, 198, 198);
+}
+
+.theme:hover {
+  background-color: rgb(202, 187, 187);
+  color: black;
+}
+input {
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 70px;
+}
+input:focus {
+  /* background-color: black; */
+  width: 150px;
+  border: 1px solid black;
+}
+sup {
+  background-color: rgb(250, 52, 85);
+  padding: 0 5px;
+  font-size: 10px;
+  color: black;
+  border-radius: 10px;
+}
