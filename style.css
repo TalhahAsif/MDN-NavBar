@@ -10,8 +10,15 @@
 li {
   list-style: none;
   display: inline-block;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+li:hover {
+  color: #031842;
+  background-color: #dde1e6;
+  /* filter: blur(10px); */
 }
 .logo {
   /* font-size: 30px; */
@@ -77,14 +84,13 @@ sup {
   color: black;
   border-radius: 10px;
 }
-.logo-text{
+.logo-text {
   font-family: monospace;
   font-size: 17px;
 }
-.logo-box{
+.logo-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 30px;
-
 }
