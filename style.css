@@ -10,9 +10,9 @@
 li {
   list-style: none;
   display: inline-block;
-  /* margin: 0 10px; */
+  margin: 0 10px;
   cursor: pointer;
-  padding: 10px;
+  padding: 7px;
   border-radius: 10px;
 }
 li:hover {
@@ -93,4 +93,5 @@ sup {
   align-items: center;
   justify-content: center;
   margin-right: 30px;
+  cursor: pointer;
 }
