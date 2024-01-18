@@ -14,10 +14,12 @@ li {
   cursor: pointer;
 }
 .logo {
-  font-size: 30px;
-  margin: 0 30px 0 0;
+  /* font-size: 30px; */
+  margin: 0 8px 0 0;
   cursor: pointer;
+  width: 28px;
 }
+
 .firstcontainer {
   display: flex;
   align-items: center;
@@ -74,4 +76,15 @@ sup {
   font-size: 10px;
   color: black;
   border-radius: 10px;
+}
+.logo-text{
+  font-family: monospace;
+  font-size: 17px;
+}
+.logo-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+
 }
