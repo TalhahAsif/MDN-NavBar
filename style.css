@@ -7,6 +7,9 @@
   background-color: #1b1b1b;
   color: gainsboro;
 }
+body {
+  position: relative;
+}
 li {
   list-style: none;
   display: inline-block;
@@ -15,7 +18,6 @@ li {
   padding: 7px;
   border-radius: 5px;
   transition: all 0.3s;
-
 }
 li:hover {
   color: #031842;
@@ -33,15 +35,17 @@ li:hover {
   display: flex;
   align-items: center;
   font-weight: bold;
-
 }
 .main-container {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
   border-top: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
+  z-index: 1;
 }
 .theme,
 .login {
@@ -63,6 +67,7 @@ li:hover {
   font-weight: bold;
   color: black;
   cursor: pointer;
+  font-family: inter;
 }
 .signup:hover {
   background-color: rgb(202, 198, 198);
@@ -75,19 +80,19 @@ button {
   background-color: rgb(202, 187, 187);
   color: black;
 }
-input {
+input.nav-input {
   padding: 5px 10px;
   border: 1px solid;
   border-radius: 20px;
   width: 70px;
   transition: width 0.4s;
 }
-input:focus {
+input.nav-input:focus {
   /* background-color: black; */
   width: 200px;
   border: 1px solid black;
 }
-sup {
+sup.beta {
   background-color: rgb(250, 52, 85);
   padding: 0 5px;
   font-size: 10px;
@@ -105,88 +110,260 @@ sup {
   margin: 8px;
   cursor: pointer;
 }
-i.bar-icon{
+i.bar-icon {
   display: none;
   margin-right: 50px;
   cursor: pointer;
 }
-.info{
+.info {
   text-align: center;
   margin: 18px;
   font-weight: bold;
   background-color: #313131 !important;
 }
-span.ai-help{
+span.ai-help {
   color: #aa72af;
   cursor: pointer;
 }
-span.ai-help:hover{
+span.ai-help:hover {
   text-decoration: underline;
 }
 
-.main-background{
+.main-background {
   position: relative;
-  height: 70vh;
-  background-image: url(./Asstes/background.png);
+  height: 60vh;
+  background: url(./Asstes/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
   /* filter: brightness(50%);  */
   /* filter: grayscale(100%); */
 }
-.main-heading{
-  z-index: 1;
+.main-box {
+  flex-direction: column;
   position: absolute;
   background: none;
-  left: 270px;
-  top: 30px;
-  font-size: 40px;
+  height: inherit;
+  min-width: 60%;
+}
+.main-heading {
+  margin-top: 40px;
+  background: none;
+  font-size: 45px;
   font-weight: lighter;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
-.Developers-span{
+.Developers-span {
   z-index: 1;
   background: none;
   text-decoration: underline #8cb4ff 2.5px;
   color: white;
   font-weight: lighter;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.sub-heading{
-  position: absolute;
+.sub-heading {
+  margin-top: 45px;
   background: none;
-  left: 270px;
-  top: 200px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
-
 }
-@media only screen and (max-width: 1200px){
-  i.bar-icon{
+.input-box {
+  background: none;
+  display: flex;
+  justify-content: center;
+  margin: 45px;
+}
+input.main-background-input {
+  width: 70%;
+  height: 70px;
+  border-radius: 100px;
+  padding: 20px;
+  color: white;
+  font-size: 17px;
+  background: none;
+}
+.flex-center {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.heading-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+.card-sec-heading,
+.latest-news-heading {
+  font-size: 25px;
+  font-weight: lighter;
+}
+.card-row-1,
+.card-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card1,
+.card2 {
+  margin: 10px;
+  border: 1px solid white;
+  padding: 20px;
+  width: 408px;
+  height: 182px;
+  border-radius: 10px;
+}
+.para-0 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+}
+.para-1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+.para-2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+}
+.para-3 {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.latest-news {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 50px;
+}
+
+.latest-news-heading {
+  margin-bottom: 25px;
+}
+.news-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 850px;
+  height: 62px;
+  padding: 14px;
+  border-radius: 4px;
+}
+.background {
+  background-color: #313131;
+}
+.second-background {
+  background-image: url(./Asstes/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  margin: 40px 0;
+}
+.contributor-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  height: 60vh;
+}
+.commas{
+  font-size: 17px;
+}
+.contibutor-para{
+  width: 512px;
+  background: none;
+}
+.contributor-heading{
+  font-size: 23px;
+  margin-bottom: 20px;
+  background: none;
+  font-family: "Inter", sans-serif;
+}
+.contibutor-detail{
+  font-size: 16px;
+  background: none;
+  width: 400px;
+  font-weight: bolder;
+  font-style: italic;
+  margin: 30px 0;
+  margin-bottom: 20px;
+  font-family: poppins;
+}
+.yuji{
+  font-size: 25px;
+  width: 70px;
+  text-align: center;
+  color: #1b1b1b;
+  background-color: white;
+  font-family: inter;
+  font-weight: bold;
+}
+.contibutor-img{
+  width: 256px;
+  background: none;
+}
+.contibutor-img img{
+  width: 230px;
+  background: none;
+}
+.get-Btn,i{
+  background:none;
+  border: none;
+  font-family: poppins;
+  cursor: pointer;
+  color: #6eb4ff;
+  font-size:15px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  i.bar-icon {
     display: inline-block;
   }
-  .second-container{
+  .second-container {
     display: none;
   }
 }
-@media only screen and (max-width: 750px){
-    ul{
-      display: none;
-    }
-    .firstcontainer{
-      display: flex;
-      justify-content: center;
-      align-items: end;
-      width: 100%;
-      font-size: 1000px;
-    }
-    .logo{
-      width: 70px;
-    }
-    .logo-text {
-      font-size: 70px;
-    }
+
+@media only screen and (max-width: 750px) {
+  ul {
+    display: none;
+  }
+  .firstcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    font-size: 1000px;
+  }
+  .logo {
+    width: 70px;
+  }
+  .logo-text {
+    font-size: 70px;
+  }
 }

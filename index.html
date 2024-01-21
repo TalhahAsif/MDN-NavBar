@@ -42,7 +42,7 @@
           <li>Plus</li>
           <li>Blog</li>
           <li>Play</li>
-          <li>AI Help <sup>beta</sup></li>
+          <li>AI Help <sup class="beta">beta</sup></li>
         </ul>
       </div>
 
@@ -52,22 +52,242 @@
           theme
         </button>
 
-        <input type="text" />
+        <input type="text" class="nav-input" />
         <button class="login">Login</button>
         <button class="signup">Sign up for free</button>
       </div>
       <i class="fa-solid fa-bars fa-2xl bar-icon"></i>
     </div>
     <section class="main-background">
-      <p class="main-heading">
-        Resources for <span class="Developers-span">Developers</span>,<br />
-        by Developers
-      </p>
-      <p class="sub-heading">
-        Documenting web technologies, including CSS, HTML, and JavaScript, since
-        2005.
-      </p>
-      <input type="text">
+      <div class="main-box">
+        <p class="main-heading">
+          Resources for <span class="Developers-span">Developers</span>,<br />
+          by Developers
+        </p>
+        <p class="sub-heading">
+          Documenting web technologies, including CSS, HTML, and JavaScript,
+          since 2005.
+        </p>
+        <div class="input-box">
+          <input type="text" class="main-background-input" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles -->
+
+    <div class="flex-center">
+      <main class="articles">
+        <div class="heading-sec">
+          <h2 class="card-sec-heading">Featured articles</h2>
+        </div>
+        <div class="cards-section">
+          <section class="card-row-1">
+            <div class="card1">
+              <p class="para-1">
+                New reference pages on MDN for JavaScript regular expressions
+              </p>
+              <p class="para-2">
+                See the latest updates to the MDN reference pages about
+                JavaScript regular expressions, including new sections on
+                sub-features and browser compatibility information.
+              </p>
+            </div>
+            <div class="card2">
+              <p class="para-1">
+                Using HTML landmark roles to improve accessibility
+              </p>
+              <p class="para-2">
+                Learn what HTML landmark roles are, how they improve
+                accessibility, and how you can include them on your website
+                effectively.
+              </p>
+            </div>
+          </section>
+          <section class="card-row-2">
+            <div class="card1">
+              <p class="para-0">Web APIs</p>
+              <p class="para-1">Performance APIs</p>
+              <p class="para-2">
+                The Performance API is a group of standards used to measure the
+                performance of web applications.
+              </p>
+            </div>
+            <div class="card2">
+              <p class="para-0">CSS</p>
+              <p class="para-1">CSS nesting</p>
+              <p class="para-2">
+                The CSS nesting module defines a syntax for nesting selectors,
+                providing the ability to nest one style rule inside another,
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!-- latest news -->
+    <section class="flex-center">
+      <main class="latest-news">
+        <h2 class="latest-news-heading">Latest News</h2>
+        <section class="box-section">
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">
+                Responsibly empowering developers with AI on MDN
+              </p>
+              <p class="para-3 background">blog.mozilla.org</p>
+            </div>
+            <p class="para-3 background">7 months ago</p>
+          </div>
+          <div class="news-box">
+            <div class="">
+              <p class="para-2">
+                Introducing AI Help: Your Trusted Companion for Web Development
+              </p>
+              <p class="para-3">developer.mozilla.org</p>
+            </div>
+            <p class="para-3">7 months ago</p>
+          </div>
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">
+                Introducing the MDN Playground: Bring your code to life!
+              </p>
+              <p class="para-3 background">developer.mozilla.org</p>
+            </div>
+            <p class="para-3 background">7 months ago</p>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- Recent contribution -->
+
+    <section class="flex-center">
+      <main class="latest-news">
+        <h2 class="latest-news-heading">Recent Contribution</h2>
+        <section class="box-section">
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">Fix typos</p>
+              <p class="para-3 background">mdn/content</p>
+            </div>
+            <p class="para-3 background">19 hours ago</p>
+          </div>
+          <div class="news-box">
+            <div class="">
+              <p class="para-2">
+                [ru] unify `{{JSRef}}` macro usage (remove parameters)
+              </p>
+              <p class="para-3">mdn/translated-content</p>
+            </div>
+            <p class="para-3">21 hours ago</p>
+          </div>
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">
+                [ru] update
+                `Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat`
+                translation
+              </p>
+              <p class="para-3 background">mdn/translated-content</p>
+            </div>
+            <p class="para-3 background">a day ago</p>
+          </div>
+        </section>
+        <section class="box-section">
+          <div class="news-box">
+            <div class="">
+              <p class="para-2">
+                [ru] update
+                `Web/JavaScript/Reference/Global_Objects/String/localeCompare`
+                translation
+              </p>
+              <p class="para-3">mdn/translated-content</p>
+            </div>
+            <p class="para-3">a day ago</p>
+          </div>
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">
+                [zh-cn]: add the translation of asyncIterator overview
+              </p>
+              <p class="para-3 background">mdn/translated-content</p>
+            </div>
+            <p class="para-3 background">a day ago</p>
+          </div>
+          <div class="news-box">
+            <div class="">
+              <p class="para-2">
+                [ru] update
+                `Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString`
+                translation
+              </p>
+              <p class="para-3">mdn/translated-content</p>
+            </div>
+            <p class="para-3">a day ago</p>
+          </div>
+        </section>
+        <section class="box-section">
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">Edit index.md for clarity</p>
+              <p class="para-3 background">mdn/content</p>
+            </div>
+            <p class="para-3 background">a day ago</p>
+          </div>
+          <div class="news-box">
+            <div class="">
+              <p class="para-2">fix section name | `Throws` to `Exceptions`</p>
+              <p class="para-3">mdn/content</p>
+            </div>
+            <p class="para-3">2 days ago</p>
+          </div>
+          <div class="news-box background">
+            <div class="background">
+              <p class="para-2 background">fix(css): update opacity page</p>
+              <p class="para-3 background">mdn/content</p>
+            </div>
+            <p class="para-3 background">2 days ago</p>
+          </div>
+          <div class="news-box">
+            <div class="">
+              <p class="para-2">
+                fix(html): mention that table cell styles are painted over
+                column styles
+              </p>
+              <p class="para-3">mdn/content</p>
+            </div>
+            <p class="para-3">2 days ago</p>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- Contributor Spotlight -->
+
+    <section class="second-background">
+      <div class="flex-center">
+        <main class="contributor-section">
+          <div class="contibutor-para">
+            <p class="contributor-heading">Contributor Spotlight</p>
+            <p class="yuji">YUJI</p>
+            <p class="contibutor-detail">
+              <sup class="commas"><i class="fa-solid fa-quote-left"></i></sup
+              >MDN Web Docs has the most up-to-date and accurate information and
+              the content is presented in an easy-to-understand manner. I also
+              like that it's available in many languages (very important!).
+            </p>
+            <button class="get-Btn">
+              Get involved <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="contibutor-img">
+            <img src="./Asstes/mdn_contributor.png" alt="" />
+          </div>
+        </main>
+      </div>
     </section>
   </body>
 </html>
